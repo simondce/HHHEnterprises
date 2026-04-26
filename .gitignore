@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local Claude / dev tooling — don't publish to the public repo
+.claude/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency / build dirs (none right now, future-proof)
+node_modules/
+dist/
+build/
