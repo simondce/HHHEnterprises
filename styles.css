@@ -1139,6 +1139,14 @@ section.section { transition: background .3s; }
    Responsive — phones (≤ 720px)
    ============================================================ */
 @media (max-width: 720px) {
+  /* Hide the visible scrollbar on phones — scroll still works,
+     just no chrome on the right edge. Mobile browsers normally
+     don't render persistent scrollbars, but desktop emulators
+     and some Android browsers do; this keeps the look clean. */
+  html { scrollbar-width: none; -ms-overflow-style: none; }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar { width: 0; height: 0; display: none; }
+
   .container { padding: 0 24px; }
 
   /* Top bar — wrap cleanly */
